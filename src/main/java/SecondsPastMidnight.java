@@ -9,10 +9,8 @@ class SecondsPastMidnight {
         //Reads int from user
         int number = scanner.nextInt();
 
-        //Your code goes here
-
-
-        // closing the scanner object
+        System.out.println((number / 3600) + " " + (number / 60));
+   
         scanner.close();
     }
 }
