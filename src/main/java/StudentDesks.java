@@ -10,7 +10,8 @@ class StudentDesks {
         double class2 = Math.round(scanner.nextDouble() / 2);
         double class3 = Math.round(scanner.nextDouble() / 2);
         
-        System.out.print(class1 + class2 + class3);
+        int answer = (int) class1 + class2 + class3;
+        System.out.print(answer);
 
         scanner.close();
     }
