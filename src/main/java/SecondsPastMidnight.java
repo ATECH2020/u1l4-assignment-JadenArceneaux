@@ -9,7 +9,7 @@ class SecondsPastMidnight {
         //Reads int from user
         int number = scanner.nextInt();
 
-        System.out.println((number / 3600) + " " + (number / 60));
+        System.out.print((number / 3600) + " " + (number / 60));
    
         scanner.close();
     }
