@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 class Timestamps {
     public static void main(String[] args) {
@@ -15,9 +16,13 @@ class Timestamps {
         int seconds2 = scanner.nextInt();
 
 
-        /*
-         *  your code goes here
-         */
+        int hourDif = hours2 - hours1;
+        int minutesDif = minutes2 - minutes1;
+        int secondsDif = seconds2 - seconds1;
+
+        int totalSeconds = (hourDif * 3600) + (minutesDif * 60) + (secondsDif);
+
+        System.out.print(totalSeconds);
 
 
         // closing the scanner object

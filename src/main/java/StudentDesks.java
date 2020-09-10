@@ -1,20 +1,18 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 class StudentDesks {
     public static void main(String[] args) {
 
         //Creates a new scanner for user input
         Scanner scanner = new Scanner(System.in);
-
-        //Reads ints from user
+        double class1 = Math.round(scanner.nextDouble() / 2);
+        double class2 = Math.round(scanner.nextDouble() / 2);
+        double class3 = Math.round(scanner.nextDouble() / 2);
         
+        int answer = (int) (class1 + class2 + class3);
+        System.out.print(answer);
 
-        /*
-         *  your code goes here
-         */
-
-
-        // closing the scanner object
         scanner.close();
     }
 }
